@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080b16"><meta name="description" content="SHOYEB Live Karaoke - offline microphone voice effects and local music">
+<link rel="manifest" href="./manifest.json"><link rel="icon" href="./icons/icon.svg"><link rel="stylesheet" href="./style.css">
+<title>SHOYEB Live Karaoke</title>
+</head>
+<body><main class="app">
+<header><div><div class="brand">SHOYEB</div><h1>Live Karaoke</h1><p>🎤 Live Mic • 🎚️ Voice FX • ✨ Echo • Reverb</p></div><span id="net">CHECKING...</span></header>
+<section class="card hero"><canvas id="meter" width="900" height="54"></canvas><div class="buttons"><button id="start">🎤 START MIC</button><button id="stop" disabled>⏹ STOP</button></div><div id="msg">Tap START MIC and allow microphone permission. Use headphones to prevent feedback.</div></section>
+<section class="card"><h2>🎵 Karaoke Music</h2><label class="upload">＋ Choose MP3 / WAV / M4A<input id="file" type="file" accept="audio/*"></label><div id="song" class="song">No song selected</div><audio id="audio" controls preload="metadata"></audio><label>Music volume <output id="mv">70%</output><input id="music" type="range" min="0" max="100" value="70"></label></section>
+<section class="card"><h2>🎚️ Voice Changer</h2><label>Preset<select id="voice"><option value="normal">Normal</option><option value="deep">Deep Voice</option><option value="bright">Bright Voice</option><option value="radio">Radio</option><option value="robot">Robot</option><option value="telephone">Telephone</option></select></label><label>Mic volume <output id="micv">100%</output><input id="micvol" type="range" min="0" max="150" value="100"></label></section>
+<section class="card"><h2>✨ Effects</h2><label>Echo <output id="ev">20%</output><input id="echo" type="range" min="0" max="75" value="20"></label><label>Reverb <output id="rv">25%</output><input id="reverb" type="range" min="0" max="80" value="25"></label><label>Delay <output id="dv">220 ms</output><input id="delay" type="range" min="60" max="700" value="220"></label><label>Master <output id="masterv">85%</output><input id="master" type="range" min="0" max="120" value="85"></label></section>
+<section class="card"><h2>📱 Offline PWA</h2><p id="pwaText">For microphone access, open this app from your HTTPS GitHub Pages address. After opening it once online, the app shell can work offline.</p><button id="install" hidden>📲 INSTALL APP</button></section>
+<footer>SHOYEB Live Karaoke • Local audio is not uploaded</footer>
+</main><script src="./app.js"></script></body></html>
