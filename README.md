@@ -1,0 +1,2 @@
+# SHOYEB Live Karaoke Offline PWA
+Upload all files to GitHub repository root. GitHub Pages: Settings > Pages > Deploy from a branch > main > / (root) > Save. Open the HTTPS site once online so the service worker caches the app shell. Then the installed PWA can open and process local audio/mic without internet. Internet streaming cannot work offline. Microphone permission and HTTPS are required.
